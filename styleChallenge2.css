@@ -117,18 +117,14 @@ li:last-child {
   background-color: #fff;
 }
 
-.colorCardContainer {
-  /* margin-top: 15px; */
-}
-
-.colorCardContainer div {
+/* .colorCardContainer div {
   display: inline-block;
   width: 22px;
   height: 22px;
   margin-right: 10px;
-}
+} */
 
-.colorCardContainer :nth-child(1) {
+/* .colorCardContainer :nth-child(1) {
   background-color: #000;
 }
 
@@ -150,35 +146,27 @@ li:last-child {
 .colorCardContainer :nth-child(6) {
   background-color: rgb(123, 6, 6);
   margin: 0;
-}
-/* .contentHider {
-  visibility: hidden;
 } */
 
-.product-img {
+/* .product-img {
   float: left;
   margin-right: 40px;
 }
 
 .product-info {
-  /* background-color: rgb(9, 222, 9); */
   width: 240px;
   float: left;
   margin-top: 20px;
   margin-right: 40px;
-  /* margin-left: 50px; */
-  /* position: relative; */
+
 }
 
 .price {
   float: left;
 }
 .shipping {
-  /* float: right; */
-  /* position: absolute; */
   float: right;
   top: 8px;
-  /* right: 10px; */
 }
 
 .product-description {
@@ -187,8 +175,71 @@ li:last-child {
 }
 
 .product-details {
-  /* background-color: blue; */
   width: 240px;
   float: left;
   margin-top: 20px;
+} */
+
+/*FLEX BOX*/
+.colorCardContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.color {
+  /* display: flexbox; */
+  width: 22px;
+  height: 22px;
+  /* margin-right: 10px; */
+}
+
+.color-black {
+  background-color: #000;
+}
+
+.color-blue {
+  background-color: rgb(71, 71, 255);
+}
+.color-red {
+  background-color: rgb(251, 55, 55);
+}
+
+.color-yellow {
+  background-color: rgb(241, 241, 20);
+}
+
+.color-green {
+  background-color: rgb(9, 222, 9);
+}
+
+.color-brown {
+  background-color: rgb(123, 6, 6);
+  margin: 0;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+.product-info {
+  margin-top: 20px;
+  flex: 1;
+}
+
+.product-details {
+  margin-top: 20px;
+  flex: 1;
+}
+
+.product-description {
+  margin-bottom: 10px;
 }
